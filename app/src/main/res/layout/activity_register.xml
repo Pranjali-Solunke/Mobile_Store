@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.mobile_store.Register">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView6"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/rgister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:text="register"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="304dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/cpass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_alignStart="@+id/pass"
+            android:layout_centerVertical="true"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Enter Email Id"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/cpass"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/rgister"
+            android:layout_alignStart="@+id/email"
+            android:layout_marginBottom="14dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+</android.widget.RelativeLayout>
